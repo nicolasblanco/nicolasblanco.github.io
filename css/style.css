@@ -1,0 +1,301 @@
+@font-face {
+  font-family: 'DIN-Alternate-Bold';
+      src: url('../fonts/DINAlternate-Bold.ttf') format('truetype');
+     
+       src: url('../fonts/DIN-Alternate-Bold.otf') format('otf');
+      font-weight: bold;
+}
+
+
+@font-face {
+  font-family: "Montserat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("ttf");
+}
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #F9F4EF;
+  font-size: 14px;
+  color: #575756;
+
+}
+
+h1 {
+  font-size: 32px;
+  /*font-weight: bold;*/
+}
+h2 {
+  font-size: 20px;
+}
+
+/*Navigation*/
+.navbar-gray {
+  background-color: #F9F4EF;
+  padding-left: 60px;
+  padding-right: 40px;
+}
+.navbar-nav li a {
+  color: #3C3C3B;
+  font-size: 14px;
+  font-family: 'DIN-Alternate-Bold';
+  font-weight: bold;
+}
+/* End Navigation */
+.navbar .btn {
+  font-size: 14px;
+  padding: 3px 15px;
+}
+.navbar .btn-cart {
+  /*text-indent: -99999px;*/
+  display: flex;
+    height: 22px;
+    overflow: hidden;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.navbar .btn-cart:before {
+    display: block;
+    border-top: 35px solid #EB736B;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 32px;
+    content: '';
+  }
+.navbar .btn-cart:after {
+  content: '0';
+  margin-left: 5px;
+  color: #3C3C3B;
+
+}
+/*Hero Section*/
+.hero {
+
+  background-image: linear-gradient(rgba(87, 87, 86, 0.3), rgba(87, 87, 86, 0.3)), url("../images/bg-hero.png");
+  height: 420px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  padding: 50px 0;
+}
+.hero h1 {
+  color: #ffffff;
+}
+.hero p {
+  color: #ffffff;
+  font-size: 13px;
+  font-family: "Montserat";
+}
+
+.hero .social {
+  position: absolute;
+  top:  10px;
+  right:  40px;
+  list-style-type: none;
+   padding: 0px;
+  margin: 0px;
+}
+
+.hero .social li {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+}
+/*Map Section*/
+#map {
+  min-height: 500px;
+  background: url(../images/map.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/*HistorySection*/
+#historySection {
+  padding-top: 95px;
+  padding-bottom: 60px;
+}
+
+#historySection .white-box {
+  padding: 20px;
+  background-color: #ffffff;
+}
+#historySection .white-box p:last-child {
+  margin-bottom: 0px;
+}
+
+
+/*Become a Dokkieur section*/
+#becomeDokitto .container {
+  background:  url(../images/bg.png) center center no-repeat;
+  background-size: contain;
+  
+}
+#becomeDokitto img {max-width: 450px; margin: 0px auto; display: block}
+#becomeDokitto h2.white-box {
+  padding: 26px 30px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+#becomeDokitto h2.small-white-box {
+  padding: 17px 30px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  text-align: left;
+  display: inline-block;
+  width: 60%;
+}
+#becomeDokitto .container >.row {
+  min-height: 700px;
+  padding-top: 100px;
+}
+#becomeDokitto .person-img {
+  max-width: 300px;
+}
+/*Smaller Map Section*/
+#smallMap {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+#smallMap .white-box {
+  padding: 30px;
+  background: url(../images/2-peoples-with-glass.png) center bottom no-repeat #ffffff;
+  background-size: 300px;
+}
+
+/*Contact Section*/
+#contactSection .bg-red {
+  color: #EB736B;
+  /*background:  #f9d7d4;*/
+  display: inline-block;
+}
+input[type=text] {
+  background-color: #ffffff;
+  width: 100%;
+  border: 0px;
+  font-size: 16px;
+  color: #706F6F;
+  padding:  10px 20px;
+  outline:  none !important;
+}
+input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  /*background:  #f9d7d4;*/
+  opacity: 1; /* Firefox */
+}
+
+/*Footer section*/
+footer {
+  padding: 50px 0 100px;
+  background-color: #EB736B;
+  color: #FFFFFF;
+}
+footer a,
+footer a:active,
+footer a:visited,
+footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+footer .social {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+} 
+footer .social li {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+}
+
+footer .col {padding: 20px 47px;}
+
+
+
+
+/*General Buttons*/
+.btn {
+  font-size: 16px;
+  border-radius:  12px;
+  padding: 13px 30px;
+  border: solid 2px;
+}
+
+.btn-red {
+  background-color: #EB736B;
+  color: #FFFFFF;
+  font-weight: normal;
+  border-color: #EB736B ;
+}
+.btn-red:hover {
+  background-color: #ffffff;
+  color: #EB736B;
+}
+
+/*Button Arrow Down*/
+.down-arrow,
+.down-arrow:hover {
+  display: block;
+  text-decoration: none;
+  margin-top: 55px;
+}
+.down-arrow:after {
+    display: inline-block;  
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    content: '';
+    border-top: 16px solid #9A4E4E;
+  }
+
+  /*Blog Section*/
+  #blogSection .blog-item {
+    min-height: 300px;
+    padding: 30px;
+    margin: 20px 10px;
+    background-color: #9D9D9C;
+    color: #ffffff;
+    text-align: center;
+  }
+
+/*Margins*/
+.mar-b-60 {margin-bottom: 60px;}
+.mar-b-40 {margin-bottom: 40px;}
+.mar-b-30 {margin-bottom: 30px;}
+.mar-b-20 {margin-bottom: 20px;}
+.mar-b-10 {margin-bottom: 10px;}
+
+.mar-t-30 {margin-top: 30px;}
+
+
+.mar-l-40 {margin-left: 40px;}
+.mar-l-30 {margin-left: 30px;}
+
+.mar-r-40 {margin-right: 40px;}
+.mar-r-30 {margin-right: 30px;}
+
+
+
+@media screen and (max-width: 991px) {
+  .navbar-gray {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .btn-cart {
+    position: absolute;
+    top:  17px;
+    right: 15px;
+  }
+  .hero {
+    height: auto;
+  }
+  #becomeDokitto .container >.row {
+    min-height: auto;
+    padding-top: 40px;
+  }
+  #becomeDokitto .container {
+    background-position: 50% 0;
+  }
+}
