@@ -42,6 +42,26 @@ h2 {
   font-family: 'DIN-Alternate-Bold';
   font-weight: bold;
 }
+.navbar .navbar-toggler {
+  border-color: #9A4E4E;
+  position: absolute;
+    right: 15px;
+    top:  16px;
+    padding: .30rem .20rem;
+}
+.navbar .navbar-toggler span:first-child {
+  margin-top: 0px;
+}
+.navbar .navbar-toggler span {
+    display: block;
+    width: 1.2em;
+    height: 2px;
+    vertical-align: middle;
+    content: "";
+    background: #9A4E4E;
+    margin: 4px 0 0;
+}
+
 /* End Navigation */
 .navbar .btn {
   font-size: 14px;
@@ -286,7 +306,7 @@ footer .col {padding: 20px 47px;}
   .btn-cart {
     position: absolute;
     top:  17px;
-    right: 15px;
+    right: 60px;
   }
   .hero {
     height: auto;
@@ -297,5 +317,33 @@ footer .col {padding: 20px 47px;}
   }
   #becomeDokitto .container {
     background-position: 50% 0;
+  }
+
+  #becomeDokitto .d-center-sm {
+    text-align: center;
+  }
+  #becomeDokitto .d-center-sm .btn {
+    margin-left:  auto;
+  }
+  #becomeDokitto h2.small-white-box {
+    text-align: center;
+    align-self: center!important;
+  }
+  #becomeDokitto .align-items-end {
+     align-items: center!important;
+  }
+#becomeDokitto .align-items-end .btn,
+ .justify-content-center .btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #smallMap .white-box {
+      background-size: 200px;
+      padding-bottom: 100px;
+      margin-top: 20px;
+  }
+
+  footer .navbar-brand {
+    margin-left: 47px;
   }
 }
