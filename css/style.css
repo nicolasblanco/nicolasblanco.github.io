@@ -61,7 +61,9 @@ h2 {
     background: #9A4E4E;
     margin: 4px 0 0;
 }
-
+nav .navbar-brand img {
+  max-height: 27px;
+}
 /* End Navigation */
 .navbar .btn {
   font-size: 14px;
@@ -92,15 +94,19 @@ h2 {
 }
 /*Hero Section*/
 .hero {
-
   background-image: linear-gradient(rgba(87, 87, 86, 0.3), rgba(87, 87, 86, 0.3)), url("../images/bg-hero.png");
   height: 420px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
   padding: 50px 0;
+}
+.hero img {
+  max-width: 170px;
+}
+.hero .social img {
+  max-width: 27px;
 }
 .hero h1 {
   color: #ffffff;
@@ -183,7 +189,9 @@ h2 {
   background: url(../images/2-peoples-with-glass.png) center bottom no-repeat #ffffff;
   background-size: 300px;
 }
-
+#rensembleSection img {
+  max-width: 339px;
+}
 /*Contact Section*/
 #contactSection .bg-red {
   color: #EB736B;
@@ -228,9 +236,13 @@ footer .social li {
   display: inline-block;
   margin: 5px 5px 5px 0;
 }
-
+footer .social li img {
+  width: 30px;
+}
 footer .col {padding: 20px 47px;}
-
+footer .navbar-brand img {
+    max-height: 44px;
+  }
 
 
 
