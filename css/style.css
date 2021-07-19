@@ -156,9 +156,9 @@ nav .navbar-brand img {
 #becomeDokitto .container {
   background:  url(../images/bg.png) center center no-repeat;
   background-size: contain;
+  min-height: 800px;
   
 }
-#becomeDokitto img {max-width: 450px; margin: 0px auto; display: block}
 #becomeDokitto h2.white-box {
   padding: 26px 30px;
   background-color: #ffffff;
@@ -178,6 +178,8 @@ nav .navbar-brand img {
 }
 #becomeDokitto .person-img {
   max-width: 300px;
+  width: 90%;
+   margin: 0px auto; display: block
 }
 /*Smaller Map Section*/
 #smallMap {
@@ -191,6 +193,7 @@ nav .navbar-brand img {
 }
 #rensembleSection img {
   max-width: 339px;
+  width: 90%;
 }
 /*Contact Section*/
 #contactSection .bg-red {
@@ -308,10 +311,12 @@ footer .navbar-brand img {
 .mar-r-40 {margin-right: 40px;}
 .mar-r-30 {margin-right: 30px;}
 
-
+.hide-desktop {
+    display: none;
+  }
 
 @media screen and (max-width: 991px) {
-  
+
   .navbar-gray {
     padding-left: 16px;
     padding-right: 16px;
@@ -338,9 +343,13 @@ footer .navbar-brand img {
   #becomeDokitto .d-center-sm .btn {
     margin-left:  auto;
   }
+  #becomeDokitto .small-white-box {
+    width: 100%;
+  }
   #becomeDokitto h2.small-white-box {
     text-align: center;
     align-self: center!important;
+    width: 100%;
   }
   #becomeDokitto .align-items-end {
      align-items: center!important;
@@ -358,5 +367,27 @@ footer .navbar-brand img {
 
   footer .navbar-brand {
     margin-left: 47px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+
+  #becomeDokitto .container {
+    background: none;
+  }
+  #becomeDokitto p.mar-l-30,
+  #becomeDokitto p.mar-r-30 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  p.text-right {
+    text-align: center !important;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .hide-desktop {
+    display: block;
   }
 }
