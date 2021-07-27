@@ -135,8 +135,84 @@ nav .navbar-brand img {
   min-height: 500px;
   background: url(../images/map.jpg) 50% 50% no-repeat;
   background-size: cover;
+  position: relative;
 }
+#map .toast {
+  height: 500px;
+  width: 500px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  flex-basis: 500px;
+  max-width: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+#map .toast .toast-header  {
+  background-color: #EB736B;
+  padding:  15px 25px;
+}
+#map .toast .toast-footer  {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  flex-basis:  60px;
+  width: 100%;
+  padding: 10px;
+}
+#map .toast .toast-header img {
+  max-width: 100px;
+}
+#map .toast .toast-header h4 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+#map .toast .toast-header p {
+  color: #ffffff;
+  font-size: 12px;
+}
+#map .toast .close {
+  font-size: 40px;
+  color:  #ffffff;
+  opacity: 1;
+  font-weight: normal;
+}
+#map .toast .toast-body {
+  flex: 1;
+  overflow: hidden;
+  opacity: 1;
+  background-color: #ffffff;
+}
+#map .toast .toast-body .carousel,
+#map .toast .toast-body .carousel .carousel-inner,
+#map .toast .toast-body .carousel .carousel-inner div {
+  height: 100%;
+}
+#map .toast .toast-body .carousel .carousel-inner .col {
+  display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 25px;
+}
+#map .toast .toast-body .carousel .carousel-inner .col img {
+    max-height: 180px;
+    margin: 0px auto;
 
+    object-fit: contain;
+}
+#map .toast .toast-body .carousel-item .col p {
+  text-align: center;
+}
+#map .toast .toast-body .carousel-item .col p:last-child {
+  font-size: 13px;
+  margin-top: 10px;
+}
+#map .toast .toast-body .carousel-item img {
+ /* height: auto;
+  max-height: 100%;*/
+}
 /*HistorySection*/
 #historySection {
   padding-top: 95px;
